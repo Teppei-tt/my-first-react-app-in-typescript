@@ -16,6 +16,9 @@ const Counter: React.FC<{}> = () => {
   useEffect(() => {
     renderTimes.current = renderTimes.current + 1;
   }, []);
+
+  const ref = useRef(null);
+
   return (
     <div>
       <div>value: {value}</div>
